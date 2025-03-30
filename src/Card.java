@@ -24,6 +24,14 @@ public class Card {
         rank = r;
     }
 
+    public int getRankValue() {
+        return rank.ordinal();
+    }
+
+    public int getSuitValue() {
+        return suit.ordinal();
+    }
+
     public void print_card(){
         System.out.print(suit + ": " + rank);
     }
